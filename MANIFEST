@@ -1,0 +1,14 @@
+Build.PL
+Changes
+LICENSE
+MANIFEST
+META.json
+META.yml
+README
+cpanfile
+dist.ini
+lib/App/PAUSE/Comaint.pm
+lib/App/PAUSE/Comaint/PackageScanner.pm
+script/comaint
+t/00_compile.t
+t/release-pod-syntax.t
