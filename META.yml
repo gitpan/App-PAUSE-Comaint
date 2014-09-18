@@ -3,16 +3,16 @@ abstract: 'Make someone co-maint of your module on PAUSE/CPAN'
 author:
   - 'Tatsuhiko Miyagawa <miyagawa@bulknews.net>'
 build_requires:
-  Test::More: 0.88
-  Test::Requires: 0
+  Test::More: '0.88'
+  Test::Requires: '0'
 configure_requires:
-  Module::Build::Tiny: 0.023
+  Module::Build::Tiny: '0.038'
 dynamic_config: 0
-generated_by: 'Dist::Milla version v1.0.2, Dist::Zilla version 4.300034, CPAN::Meta::Converter version 2.131490'
+generated_by: 'Dist::Milla version v1.0.8, Dist::Zilla version 5.020, CPAN::Meta::Converter version 2.142060'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  version: '1.4'
 name: App-PAUSE-Comaint
 no_index:
   directory:
@@ -23,10 +23,14 @@ no_index:
     - eg
     - examples
 requires:
-  WWW::Mechanize: 0
-  perl: 5.008001
+  LWP::Protocol::https: '0'
+  WWW::Mechanize: '0'
+  perl: '5.008001'
 resources:
   bugtracker: https://github.com/miyagawa/App-PAUSE-Comaint/issues
   homepage: https://github.com/miyagawa/App-PAUSE-Comaint
   repository: https://github.com/miyagawa/App-PAUSE-Comaint.git
-version: 0.01
+version: '0.02'
+x_contributors:
+  - 'Fuji, Goro (gfx) <goro-fuji@cookpad.com>'
+  - 'Tatsuhiko Miyagawa <miyagawa@gmail.com>'

@@ -2,7 +2,7 @@ package App::PAUSE::Comaint;
 
 use strict;
 use 5.008_001;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use App::PAUSE::Comaint::PackageScanner;
 use WWW::Mechanize;
@@ -19,6 +19,10 @@ sub run {
     my($self, $module, $comaint) = @_;
 
     unless ($module && $comaint) {
+        die "Usage: comaint Module AUTHOR\n";
+    }
+
+    if ($module =~ /^[A-Z]+$/ && $comaint =~ /::/) {
         die "Usage: comaint Module AUTHOR\n";
     }
 
